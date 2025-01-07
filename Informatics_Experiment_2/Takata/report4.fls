@@ -1,0 +1,16 @@
+PWD //wsl.localhost/Ubuntu/home/ren/git/Report.Unive/Informatics_Experiment_2/Takata
+INPUT c:/texlive/2024/texmf.cnf
+INPUT c:/texlive/2024/texmf-dist/web2c/texmf.cnf
+INPUT c:/texlive/2024/texmf-var/web2c/pdftex/latex.fmt
+INPUT //wsl.localhost/Ubuntu/home/ren/git/Report.Unive/Informatics_Experiment_2/Takata/report4.tex
+OUTPUT report4.log
+INPUT c:/texlive/2024/texmf-dist/tex/latex/jlreq/jlreq.cls
+INPUT c:/texlive/2024/texmf-dist/tex/latex/jlreq/jlreq.cls
+INPUT c:/texlive/2024/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+INPUT c:/texlive/2024/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+INPUT c:/texlive/2024/texmf-dist/tex/latex/jlreq/jlreq-helpers.sty
+INPUT c:/texlive/2024/texmf-dist/tex/latex/jlreq/jlreq-helpers.sty
+INPUT c:/texlive/2024/texmf-dist/tex/latex/everyhook/everyhook.sty
+INPUT c:/texlive/2024/texmf-dist/tex/latex/everyhook/everyhook.sty
+INPUT c:/texlive/2024/texmf-dist/tex/latex/svn-prov/svn-prov.sty
+INPUT c:/texlive/2024/texmf-dist/tex/latex/svn-prov/svn-prov.sty
