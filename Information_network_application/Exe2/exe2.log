@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.14.0 (TeX Live 2022/dev/Debian)  (format=lualatex 2024.12.25)  22 JAN 2025 22:32
+This is LuaHBTeX, Version 1.14.0 (TeX Live 2022/dev/Debian)  (format=lualatex 2024.12.25)  22 JAN 2025 22:36
  restricted system commands enabled.
 **exe2.tex
 (./exe2.tex
@@ -711,7 +711,7 @@ ts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/
 lm/lmroman12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman17-re
 gular.otf></usr/share/texlive/texmf-dist/fonts/opentype/public/haranoaji/HaranoA
 jiMincho-Regular.otf>
-Output written on exe2.pdf (2 pages, 73198 bytes).
+Output written on exe2.pdf (2 pages, 73199 bytes).
 
 PDF statistics: 60 PDF objects out of 1000 (max. 8388607)
  34 compressed objects within 1 object stream
