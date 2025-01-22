@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.14.0 (TeX Live 2022/dev/Debian)  (format=lualatex 2024.12.25)  21 JAN 2025 08:01
+This is LuaHBTeX, Version 1.14.0 (TeX Live 2022/dev/Debian)  (format=lualatex 2024.12.25)  22 JAN 2025 22:32
  restricted system commands enabled.
 **exe2.tex
 (./exe2.tex
@@ -692,15 +692,15 @@ LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
 (Font)              scaled to size 14.0pt on input line 13.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./exe2.aux))
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] (./exe2.aux))
 
 Here is how much of LuaTeX's memory you used:
  6450 strings out of 477805
- 125244,460012 words of node,token memory allocated
- 2787 words of node memory still in use:
-   11 hlist, 2 vlist, 6 rule, 2 glue, 4 kern, 2 glyph, 874 attribute, 109 glue_s
-pec, 49 attribute_list, 1 write, 27 user_defined nodes
-   avail lists: 1:13,2:31970,3:208,4:121,5:34,6:30,7:1902,8:1,9:892,10:39
+ 244629,460012 words of node,token memory allocated
+ 3062 words of node memory still in use:
+   11 hlist, 2 vlist, 6 rule, 2 glue, 4 kern, 2 glyph, 891 attribute, 156 glue_s
+pec, 50 attribute_list, 1 write, 28 user_defined nodes
+   avail lists: 1:41,2:75863,3:432,4:154,5:103,6:32,7:3938,8:1,9:1865,10:45
  26832 multiletter control sequences out of 65536+600000
  49 fonts using 40655799 bytes
  106i,6n,98p,1745b,294s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -711,10 +711,10 @@ ts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/
 lm/lmroman12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman17-re
 gular.otf></usr/share/texlive/texmf-dist/fonts/opentype/public/haranoaji/HaranoA
 jiMincho-Regular.otf>
-Output written on exe2.pdf (1 page, 50874 bytes).
+Output written on exe2.pdf (2 pages, 73198 bytes).
 
-PDF statistics: 57 PDF objects out of 1000 (max. 8388607)
- 32 compressed objects within 1 object stream
+PDF statistics: 60 PDF objects out of 1000 (max. 8388607)
+ 34 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 131072)
  1 words of extra memory for PDF output out of 10000 (max. 100000000)
 
