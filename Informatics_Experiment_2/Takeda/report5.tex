@@ -1,11 +1,11 @@
 \documentclass{jlreq}
 \usepackage{url}
 \usepackage{listings}
-\usepackage{graphicx} % Required for inserting images
+\usepackage{graphicx} 
 
 \title{第５回 レポート}
 \author{森田 蓮}
-\date{2025年 1月24日}
+\date{2025年 1月25日}
 
 \begin{document}
 
@@ -23,22 +23,20 @@
 \subsection{目的}
 解析環境（SPM）の設定、操作法を学び以下の実験のための準備を行う。
 また、機能的磁気共鳴画像法（fMRI）の原理を学び説明できるようにする。
-
 \subsection{実験手順}
 \begin{enumerate}
-    \item MRI, fMRIの原理について理解する <- (2)
+    \item MRI, fMRIの原理について理解する 
     \item サンプルデータの構造（撮像枚数など）を確認する
     \item SPMを用いて、サンプルデータの脳解剖画像を確認する（T1フォルダにある）
     \item SPMを用いて、サンプルデータの脳機能画像を確認する（EPIフォルダにある）
 \end{enumerate}
 \subsection{結果}
-
->>>>>>> c99a80c (第5回実験レポート　結果，考察，参考文献以外完了)
+実験手順１についてはMRI（磁気共鳴画像法）は、強力な磁場とラジオ波を利用して体内の構造を詳細に観察する技術である．水素原子の核（プロトン）が磁場の影響を受けて整列し、ラジオ波パルスによってエネルギーを吸収・放出する過程で生成される信号を解析して画像を作成する。
+また，fMRI（機能的磁気共鳴画像法）は、MRIの技術を応用して脳の活動をリアルタイムで観察する技術である。脳の活動に伴う血流の変化を検出し、酸素化ヘモグロビンと脱酸素化ヘモグロビンの磁気特性の違いを利用して、脳のどの部分が活動しているかを画像として表示する。
 \section{脳画像処理2(前処理)}
 \subsection{目的}
 fMRIデータ解析の前段階となる前処理の基本的な手法を学び、オープンデータセットを用いて実際に前処理を
 行う。
-
 \subsection{実験手順}
 \begin{enumerate}
     \item Realignment
@@ -81,16 +79,15 @@ fMRIデータ解析の前段階となる前処理の基本的な手法を学び�
     \item Smoothing
     \begin{enumerate}
         \item Smoothを選択する
-        \item Images to smooth<-Xにはnormalisation処理後の機能画像（先頭にwがついている）を指定する  \end{enumerate}
+        \item Images to smooth<-Xにはnormalisation処理後の機能画像（先頭にwがついている）を指定する 
+    \end{enumerate}
 \end{enumerate}
->>>>>>> c99a80c (第5回実験レポート　結果，考察，参考文献以外完了)
 \subsection{結果}
 
 \section{脳画像処理3(個人解析)}
 \subsection{目的}
 fMRIデータの個人レベルでの解析手法を学び、オープンデータセットも用いて個人データの解析を
 行う。
-
 \subsection{実験手順}
 \begin{enumerate}
     \item fMRI model specification
@@ -144,7 +141,6 @@ fMRIデータの集団レベルでの解析手順を学び、オープンデー�
             \item FWEcの値を読み取り、改めてResultsから解析をし、＆ extent thresholdをFWEcの値にしてみる
         \end{enumerate}
 \end{enumerate}
->>>>>>> c99a80c (第5回実験レポート　結果，考察，参考文献以外完了)
 \subsection{結果}
 
 \section{脳画像処理5(その他の解析)}
@@ -171,7 +167,6 @@ fMRI（機能的磁気共鳴画像法）を用いた脳の機能的結合性の�
         \item 多重比較補正（FDR correction）や仮説検証を行い、解析をさらに発展
     \end{enumerate}
 \end{enumerate}
->>>>>>> c99a80c (第5回実験レポート　結果，考察，参考文献以外完了)
 \subsection{結果}
 
 
@@ -181,6 +176,18 @@ fMRI（機能的磁気共鳴画像法）を用いた脳の機能的結合性の�
 
 
 \section*{参考文献}
+\begin{thebibliography}{9}
+
+\bibitem{video1}
+YouTube, ``MRI and fMRI Principles Explained'', \url{https://www.youtube.com/watch?v=NlYXqRG7lus}, accessed January 25, 2025.
+
+\bibitem{video2}
+YouTube, ``Understanding MRI and fMRI'', \url{https://www.youtube.com/watch?v=jLnuPKhKXVM}, accessed January 25, 2025.
+
+\bibitem{video3}
+YouTube, ``MRI vs fMRI: What's the Difference?'', \url{https://www.youtube.com/watch?v=rJjHjnzmvDI}, accessed January 25, 2025.
+
+\end{thebibliography}
 
 
 \end{document}
