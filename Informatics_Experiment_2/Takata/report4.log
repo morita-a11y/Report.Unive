@@ -1,6 +1,5 @@
-This is LuaHBTeX, Version 1.14.0 (TeX Live 2022/dev/Debian)  (format=lualatex 2024.12.25)  6 JAN 2025 15:13
+This is LuaHBTeX, Version 1.14.0 (TeX Live 2022/dev/Debian)  (format=lualatex 2024.12.25)  9 JAN 2025 19:08
  restricted system commands enabled.
-fd2f6d9 (コンフリクトを解決)
 **report4.tex
 (./report4.tex
 LaTeX2e <2021-11-15> patch level 1
@@ -523,169 +522,6 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-<<<<<<< HEAD
-Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
-
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
-)
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
-File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
-)
-Package graphics Info: Driver file: luatex.def on input line 107.
-
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/luatex.def
-File: luatex.def 2022/09/22 v1.2d Graphics/color driver for luatex
-))
-\Gin@req@height=\dimen176
-\Gin@req@width=\dimen177
-)
-(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count286
-\lst@gtempboxa=\box79
-\lst@token=\toks27
-\lst@length=\count287
-\lst@currlwidth=\dimen178
-\lst@column=\count288
-\lst@pos=\count289
-\lst@lostspace=\dimen179
-\lst@width=\dimen180
-\lst@newlines=\count290
-\lst@lineno=\count291
-\lst@maxwidth=\dimen181
-
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
-\c@lstnumber=\count292
-\lst@skipnumbers=\count293
-\lst@framebox=\box80
-)
-(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
-File: listings.cfg 2023/02/27 1.9 listings configuration
-))
-Package: listings 2023/02/27 1.9 (Carsten Heinz)
-
-(/usr/share/texlive/texmf-dist/tex/luatex/luatexja/patches/lltjp-listings.sty
-(/usr/share/texlive/texmf-dist/tex/luatex/luatexbase/luatexbase-cctb.sty
-Package: luatexbase-cctb 2015/10/04 v1.3 luatexbase interface to LuaTeX (legacy
- subpackage) 
-)
-\ltj@lst@japanese@min=\count294
-\CatcodeTableLTJlistings=\catcodetable17
-\ltj@lst@frame@lslimit=\dimen182
-
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
-\lst@WFtoken=\toks28
-\lst@WF=\write3
-))
-(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
-Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
-
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
-File: color.cfg 2016/01/02 v1.6 sample color configuration
-)
-Package xcolor Info: Driver file: luatex.def on input line 274.
-
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx)
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1350.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1354.
-Package xcolor Info: Model `RGB' extended on input line 1366.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1368.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1369.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1370.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
-)
-(/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
-Package: multicol 2023/03/30 v1.9f multicolumn formatting (FMi)
-\c@tracingmulticols=\count295
-\mult@box=\box81
-\multicol@leftmargin=\dimen183
-\c@unbalance=\count296
-\c@collectmore=\count297
-\doublecol@number=\count298
-\multicoltolerance=\count299
-\multicolpretolerance=\count300
-\full@width=\dimen184
-\page@free=\dimen185
-\premulticols=\dimen186
-\postmulticols=\dimen187
-\multicolsep=\skip56
-\multicolbaselineskip=\skip57
-\partial@page=\box82
-\last@line=\box83
-\mc@boxedresult=\box84
-\maxbalancingoverflow=\dimen188
-\mult@rightbox=\box85
-\mult@grightbox=\box86
-\mult@firstbox=\box87
-\mult@gfirstbox=\box88
-\@tempa=\box89
-\@tempa=\box90
-\@tempa=\box91
-\@tempa=\box92
-\@tempa=\box93
-\@tempa=\box94
-\@tempa=\box95
-\@tempa=\box96
-\@tempa=\box97
-\@tempa=\box98
-\@tempa=\box99
-\@tempa=\box100
-\@tempa=\box101
-\@tempa=\box102
-\@tempa=\box103
-\@tempa=\box104
-\@tempa=\box105
-\@tempa=\box106
-\@tempa=\box107
-\@tempa=\box108
-\@tempa=\box109
-\@tempa=\box110
-\@tempa=\box111
-\@tempa=\box112
-\@tempa=\box113
-\@tempa=\box114
-\@tempa=\box115
-\@tempa=\box116
-\@tempa=\box117
-\@tempa=\box118
-\@tempa=\box119
-\@tempa=\box120
-\@tempa=\box121
-\@tempa=\box122
-\@tempa=\box123
-\@tempa=\box124
-\c@minrows=\count301
-\c@columnbadness=\count302
-\c@finalcolumnbadness=\count303
-\last@try=\dimen189
-\multicolovershoot=\dimen190
-\multicolundershoot=\dimen191
-\mult@nat@firstbox=\box125
-\colbreak@box=\box126
-\mc@col@check@num=\count304
-) (./report4.aux)
-\openout1 = report4.aux
-
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 24.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 2
-4.
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
-File: ts1cmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
-)
-=======
 Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
@@ -843,7 +679,6 @@ LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 2
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
->>>>>>> 0ea16f78ddec5ebea7f628615b7a0bcfb296b1a7
 LaTeX Font Info:    ... okay on input line 24.
 LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 24.
 LaTeX Font Info:    ... okay on input line 24.
@@ -858,19 +693,6 @@ LaTeX Font Info:    ... okay on input line 24.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-<<<<<<< HEAD
-\scratchcounter=\count305
-\scratchdimen=\dimen192
-\scratchbox=\box127
-\nofMPsegments=\count306
-\nofMParguments=\count307
-\everyMPshowfont=\toks29
-\MPscratchCnt=\count308
-\MPscratchDim=\dimen193
-\MPnumerator=\count309
-\makeMPintoPDFobject=\count310
-\everyMPtoPDFconversion=\toks30
-=======
 \scratchcounter=\count301
 \scratchdimen=\dimen191
 \scratchbox=\box125
@@ -882,7 +704,6 @@ LaTeX Font Info:    ... okay on input line 24.
 \MPnumerator=\count305
 \makeMPintoPDFobject=\count306
 \everyMPtoPDFconversion=\toks29
->>>>>>> 0ea16f78ddec5ebea7f628615b7a0bcfb296b1a7
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -892,11 +713,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-<<<<<<< HEAD
-\c@lstlisting=\count311
-=======
 \c@lstlisting=\count307
->>>>>>> 0ea16f78ddec5ebea7f628615b7a0bcfb296b1a7
 (load cache: extra_lmroman17-regular.luc)
 LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
 (Font)              scaled to size 17.0pt on input line 26.
@@ -960,131 +777,48 @@ LaTeX Font Info:    Font shape `JY3/gt/b/n' in size <14> not available
 (Font)              Font shape `JY3/gt/m/n' tried instead on input line 29.
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
 (Font)              scaled to size 14.0pt on input line 29.
-<<<<<<< HEAD
-<<<<<<< HEAD
-(load cache: extra_lmmono10-regular.luc)
-=======
-(save cache: /home/ren/.texlive2021/texmf-var/luatexja/extra_lmmono10-regular.lu
-a.gz)(save cache: /home/ren/.texlive2021/texmf-var/luatexja/extra_lmmono10-regul
-ar.luc)
->>>>>>> 0ea16f78ddec5ebea7f628615b7a0bcfb296b1a7
-=======
-(load cache: extra_lmmono10-regular.luc)
->>>>>>> fd2f6d9 (コンフリクトを解決)
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 59.
+(Font)              <10> on input line 48.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 59.
+(Font)              <7> on input line 48.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 59.
+(Font)              <5> on input line 48.
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 7.0pt on input line 59.
+(Font)              scaled to size 7.0pt on input line 48.
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 5.0pt on input line 59.
+(Font)              scaled to size 5.0pt on input line 48.
  [1
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}](load cache: extra_lmroman10
 -bold.luc)
-=======
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}](save cache: /home/ren/.texl
-ive2021/texmf-var/luatexja/extra_lmroman10-bold.lua.gz)(save cache: /home/ren/.t
-exlive2021/texmf-var/luatexja/extra_lmroman10-bold.luc)
->>>>>>> 0ea16f78ddec5ebea7f628615b7a0bcfb296b1a7
-=======
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}](load cache: extra_lmroman10
--bold.luc)
->>>>>>> fd2f6d9 (コンフリクトを解決)
 LaTeX Font Info:    Font shape `JT3/mc/b/n' in size <10> not available
-(Font)              Font shape `JT3/gt/m/n' tried instead on input line 64.
+(Font)              Font shape `JT3/gt/m/n' tried instead on input line 66.
 LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
-(Font)              scaled to size 10.0pt on input line 64.
+(Font)              scaled to size 10.0pt on input line 66.
 LaTeX Font Info:    Font shape `JY3/mc/b/n' in size <10> not available
-(Font)              Font shape `JY3/gt/m/n' tried instead on input line 64.
+(Font)              Font shape `JY3/gt/m/n' tried instead on input line 66.
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 10.0pt on input line 64.
+(Font)              scaled to size 10.0pt on input line 66.
+(load cache: extra_lmsans9-regular.luc)
+LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
+(Font)              scaled to size 8.99994pt on input line 74.
+LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
+(Font)              scaled to size 8.99994pt on input line 74.
+LaTeX Font Info:    Font shape `JT3/gt/b/n' in size <8.99994> not available
+(Font)              Font shape `JT3/gt/m/n' tried instead on input line 74.
+LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
+(Font)              scaled to size 8.99994pt on input line 74.
+LaTeX Font Info:    Font shape `JY3/gt/b/n' in size <8.99994> not available
+(Font)              Font shape `JY3/gt/m/n' tried instead on input line 74.
+LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
+(Font)              scaled to size 8.99994pt on input line 74.
+(load cache: extra_lmmono10-regular.luc)
+Overfull \hbox (19.6539pt too wide) in paragraph at lines 84--87
+[]\TU/lmr/m/n/10 Geeks-forGeeks, Bub-ble Sort Al-go-rithm, $\TU/lmtt/m/n/10 http
+s://www.geeksforgeeks.org/bubble-[]sort-[]algorithm/$\TU/lmr/m/n/10 ,
+ []
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-<<<<<<< HEAD
-File: lstlang1.sty 2023/02/27 1.9 listings language file
-)
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang2.sty
-File: lstlang2.sty 2023/02/27 1.9 listings language file
-)
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang3.sty
-File: lstlang3.sty 2023/02/27 1.9 listings language file
-)
-
-! Package Listings Error: Couldn't load requested language.
-
-See the Listings package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.65     \begin{lstlisting}[language=x86]
-                                       
-The following languages weren't loadable:
-    ,x86$
-This may cause errors in the sequel.
-
-
-! Package Listings Error: language x86 undefined.
-
-See the Listings package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.65     \begin{lstlisting}[language=x86]
-                                       
-The language is not loadable. Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-Removing  `ltj.process_input_buffer' from `process_input_buffer'.
-Inserting `ltj.listings_unicode' in `process_input_buffer'.
-Inserting `ltj.process_input_buffer' in `process_input_buffer'.(load cache: extr
-a_lmroman5-regular.luc)
-LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
-(Font)              scaled to size 5.0pt on input line 66.
-Removing  `ltj.listings_unicode' from `process_input_buffer'. (/usr/share/texli
-ve/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2023/02/27 1.9 listings language file
-)
-Removing  `ltj.process_input_buffer' from `process_input_buffer'.
-Inserting `ltj.listings_unicode' in `process_input_buffer'.
-Inserting `ltj.process_input_buffer' in `process_input_buffer'. [2]
-Removing  `ltj.listings_unicode' from `process_input_buffer'. [3]
-(./report4.aux)
- ***********
-LaTeX2e <2023-11-01> patch level 1
-L3 programming layer <2024-01-22>
- ***********
-)
-
-Here is how much of LuaTeX's memory you used:
- 8488 strings out of 476553
- 933244,1977958 words of node,token memory allocated
- 1744 words of node memory still in use:
-   9 hlist, 1 vlist, 5 rule, 2 glue, 3 kern, 2 glyph, 540 attribute, 51 glue_spe
-c, 59 attribute_list, 1 write, 11 user_defined nodes
-   avail lists: 1:37,2:139588,3:301,4:23054,5:16777,6:157,7:13577,8:80,9:32686,1
-0:22,11:967
- 30266 multiletter control sequences out of 65536+600000
- 59 fonts using 52776535 bytes
- 107i,6n,101p,1748b,1108s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf/fonts/opentype/public/lm/lmmono9-regular.otf></usr/share/texmf
-/fonts/opentype/public/lm/lmroman5-regular.otf></usr/share/texmf/fonts/opentype/
-public/lm/lmroman10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman9
--regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></u
-sr/share/texmf/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texliv
-e/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiGothic-Medium.otf></usr/sh
-are/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/ope
-ntype/public/lm/lmroman12-regular.otf></usr/share/texmf/fonts/opentype/public/lm
-/lmroman17-regular.otf></usr/share/texlive/texmf-dist/fonts/opentype/public/hara
-noaji/HaranoAjiMincho-Regular.otf>
-Output written on report4.pdf (3 pages, 79229 bytes).
-
-=======
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang2.sty
@@ -1100,7 +834,7 @@ See the Listings package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.65     \begin{lstlisting}[language=x86]
+l.93     \begin{lstlisting}[language=x86]
                                        
 The following languages weren't loadable:
     ,x86$
@@ -1113,7 +847,7 @@ See the Listings package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.65     \begin{lstlisting}[language=x86]
+l.93     \begin{lstlisting}[language=x86]
                                        
 The language is not loadable. Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -1123,44 +857,47 @@ Inserting `ltj.listings_unicode' at position 1 in `process_input_buffer'.
 Inserting `ltj.process_input_buffer' at position 2 in `process_input_buffer'.(lo
 ad cache: extra_lmroman5-regular.luc)
 LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
-(Font)              scaled to size 5.0pt on input line 66.
+(Font)              scaled to size 5.0pt on input line 94.
+[2]
 Removing  `ltj.listings_unicode' from `process_input_buffer'. (/usr/share/texli
 ve/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 Removing  `ltj.process_input_buffer' from `process_input_buffer'.
 Inserting `ltj.listings_unicode' at position 1 in `process_input_buffer'.
-Inserting `ltj.process_input_buffer' at position 2 in `process_input_buffer'. [
-2]
+Inserting `ltj.process_input_buffer' at position 2 in `process_input_buffer'.
 Removing  `ltj.listings_unicode' from `process_input_buffer'. [3]
 (./report4.aux))
 
 Here is how much of LuaTeX's memory you used:
- 8681 strings out of 477805
- 1458196,794899 words of node,token memory allocated
- 7837 words of node memory still in use:
-   9 hlist, 1 vlist, 5 rule, 2 glue, 5 kern, 2 glyph, 2239 attribute, 490 glue_s
-pec, 124 attribute_list, 1 write, 101 user_defined nodes
-   avail lists: 1:34,2:296279,3:297,4:22985,5:16682,6:157,7:13575,8:85,9:32686,1
-0:22,11:967
- 28965 multiletter control sequences out of 65536+600000
- 59 fonts using 52772375 bytes
- 106i,6n,98p,1748b,1099s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 8690 strings out of 477805
+ 933267,794899 words of node,token memory allocated
+ 27758 words of node memory still in use:
+   9 hlist, 1 vlist, 5 rule, 2 glue, 7 kern, 2 glyph, 10962 attribute, 419 glue_
+spec, 596 attribute_list, 1 write, 570 user_defined nodes
+   avail lists: 1:36,2:153578,3:343,4:18491,5:13695,6:120,7:10402,8:52,9:26278,1
+0:39,11:798
+ 28974 multiletter control sequences out of 65536+600000
+ 62 fonts using 56819599 bytes
+ 106i,9n,98p,1748b,995s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf/fonts/opentype/public/lm/lmmono9-regular.otf></usr/share/texmf
 /fonts/opentype/public/lm/lmroman5-regular.otf></usr/share/texmf/fonts/opentype/
-public/lm/lmroman10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman9
--regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf></u
-sr/share/texmf/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texliv
-e/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiGothic-Medium.otf></usr/sh
-are/texmf/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/ope
-ntype/public/lm/lmroman12-regular.otf></usr/share/texmf/fonts/opentype/public/lm
-/lmroman17-regular.otf></usr/share/texlive/texmf-dist/fonts/opentype/public/hara
-noaji/HaranoAjiMincho-Regular.otf>
-Output written on report4.pdf (3 pages, 79141 bytes).
+public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroma
+n10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman9-regular.otf>{/u
+sr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvip
+s/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/share/te
+xmf/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texlive/texmf-dis
+t/fonts/opentype/public/haranoaji/HaranoAjiGothic-Medium.otf></usr/share/texmf/f
+onts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/publi
+c/lm/lmroman12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman17-
+regular.otf></usr/share/texlive/texmf-dist/fonts/opentype/public/haranoaji/Haran
+oAjiMincho-Regular.otf></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/
+share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public
+/lm/lmsy10.pfb>
+Output written on report4.pdf (3 pages, 115160 bytes).
 
->>>>>>> 0ea16f78ddec5ebea7f628615b7a0bcfb296b1a7
-PDF statistics: 91 PDF objects out of 1000 (max. 8388607)
- 52 compressed objects within 1 object stream
+PDF statistics: 106 PDF objects out of 1000 (max. 8388607)
+ 64 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 131072)
  1 words of extra memory for PDF output out of 10000 (max. 100000000)
 

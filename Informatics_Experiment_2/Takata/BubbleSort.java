@@ -1,64 +1,23 @@
 public class BubbleSort {
-	private int[] sort_array;
-	private long timeStart;
-	private long timeStop;
-	private int assignCount;
-	private int compareCount;
-	private BubbleSort() {
-	}
+    public static void main(String[] args) {
+        int[] data ={5, 1, 5, 2, 5, 3, 5, 4, 5};
 
-	public BubbleSort(int[] sort_array) {
-    	this.sort_array = sort_array;
-	}
+        bubbleSort(data);
 
-	public void swap(int x, int y) {
-    	assignCount += 3;
-    	int temp = this.sort_array[x];
-    	this.sort_array[x] = this.sort_array[y];
-    	this.sort_array[y] = temp;
-	}
+        System.out.println("0");
+    }
 
-	public void bubbleSort() {
-    	for (int i = this.sort_array.length - 1; i > 0; i--) {
-        	for (int j = 0; j < i; j++) {
-            	if (compareValue(sort_array[j], sort_array[j + 1]) == -1) {
-                	this.swap(j, j + 1);
-            	}
-        	}
-    	}
-	}
-	public boolean checkSort(){
-    	for(int i = 0; i < this.sort_array.length - 1; i++){
-        	if(sort_array[i] > sort_array[i + 1]){
-            	return false;
-        	}
-    	}
-    	return true;
-	}
-	public void startTimer(){
-    	timeStart = System.nanoTime();
-	}
-	public void stopTimer(){
-    	timeStop = System.nanoTime();
-	}
-	public long getSortTime(){
-    	return (timeStop - timeStart);
-   	 
-	}
-	public int getAssignCount(){
-    	return assignCount;
-	}
-	public int compareValue(int n1, int n2){
-    	compareCount++;
-    	if(n1 < n2){
-        	return 1;
-    	}else if(n1 > n2){
-        	return -1;
-    	}
-   	 
-    	return 0;
-	}
-	public int getCompareCount(){
-    	return compareCount;   
-	}
+    public static void bubbleSort(int[] array) {
+        int n = array.length;
+        for (int i = 0; i < n - 1; i++) {
+            for (int j = 0; j < n - 1 - i; j++) {
+                if (array[j] > array[j + 1]) {
+                    // Swap array[j] and array[j+1]
+                    int temp = array[j];
+                    array[j] = array[j + 1];
+                    array[j + 1] = temp;
+                }
+            }
+        }
+    }
 }
