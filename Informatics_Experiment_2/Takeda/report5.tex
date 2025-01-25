@@ -23,22 +23,82 @@
 \subsection{目的}
 解析環境（SPM）の設定、操作法を学び以下の実験のための準備を行う。
 また、機能的磁気共鳴画像法（fMRI）の原理を学び説明できるようにする。
+<<<<<<< HEAD
 \subsection{方法}
 
 \subsection{結果}
 
+=======
+\subsection{実験手順}
+\begin{enumerate}
+    \item MRI, fMRIの原理について理解する <- (2)
+    \item サンプルデータの構造（撮像枚数など）を確認する
+    \item SPMを用いて、サンプルデータの脳解剖画像を確認する（T1フォルダにある）
+    \item SPMを用いて、サンプルデータの脳機能画像を確認する（EPIフォルダにある）
+\end{enumerate}
+\subsection{結果}
+
+>>>>>>> c99a80c (第5回実験レポート　結果，考察，参考文献以外完了)
 \section{脳画像処理2(前処理)}
 \subsection{目的}
 fMRIデータ解析の前段階となる前処理の基本的な手法を学び、オープンデータセットを用いて実際に前処理を
 行う。
+<<<<<<< HEAD
 \subsection{方法}
 
+=======
+\subsection{実験手順}
+\begin{enumerate}
+    \item Realignment
+    \begin{enumerate}
+        \item Realign(Estimate)から、Realign ＆ Unwarpを選択
+        \item Batch Editorが立ち上がる
+        \item Data<-XをダブルクリックもしくはSpecifyしData
+の内容を以下のように登録する 
+        \item Images<-Xは各被験者のEPIフォルダにあるすべて
+の.niiファイル（NifTiファイル）を指定する（合計
+204ファイル）。
+        \item Runボタン（▷）を押し実行する 
+    \end{enumerate}
+
+    \item Coregistration
+    \begin{enumerate}
+        \item Coregister (Estimate)を選択する
+        \item Batch Editorの設定は以下
+        \item Reference Image <-XはEPIフォルダのmeansub1\_001.nii,1を指定（被験者1の場合）
+        \item Source imageはT1フォルダにあるsub1\_T1.nii,1を選択する
+        \item 実行する
+    \end{enumerate}
+    \item Segmentation
+    \begin{enumerate}
+        \item Segmentを選択し、以下のBatch Editor設定をする
+        \item VolumesはT1フォルダ内のsub1\_T1.nii
+        \item Save Bias CorrectedはSave Bias Correctedに変更
+        \item Affine RegularisationはEast Asian brainsにする
+        \item 次のステップのNormalisationのためにDeformation FieldsをForwardに変更設定する
+        \item 実行する
+    \end{enumerate}
+    \item Normalisation
+    \begin{enumerate}
+        \item Normalise (Estimate)からNormalise (Write)を選択する
+        \item Data<-Xから、Deformation FieldはT1フォルダのy\_sub1\_T1.niiを選択する
+        \item Image to Write<-XはEPIフォルダの先頭にuが付いた機能画像（Realign＆Unwarp処理をした画
+        像）を選択する。
+        \item Filterに\^uと入力し、usubから始まる204ファイルを選択する
+        \end{enumerate}
+    \item Smoothing
+    \begin{enumerate}
+        \item Smoothを選択する
+        \item Images to smooth<-Xにはnormalisation処理後の機能画像（先頭にwがついている）を指定する  \end{enumerate}
+\end{enumerate}
+>>>>>>> c99a80c (第5回実験レポート　結果，考察，参考文献以外完了)
 \subsection{結果}
 
 \section{脳画像処理3(個人解析)}
 \subsection{目的}
 fMRIデータの個人レベルでの解析手法を学び、オープンデータセットも用いて個人データの解析を
 行う。
+<<<<<<< HEAD
 \subsection{方法}
 
 \subsection{結果}
@@ -49,13 +109,93 @@ fMRIデータの集団レベルでの解析手順を学び、オープンデー�
 
 \subsection{方法}
 
+=======
+\subsection{実験手順}
+\begin{enumerate}
+    \item fMRI model specification
+    \begin{enumerate}
+        \item Specify 1st-levelを選択する。
+        \item Directory<-XでWorkフォルダを選択する
+        \item Timing Parametersの設定をする。(Units for design<-XはScans, Interscan interval<-Xは2.5)
+        \item Data ＆ Design<-X（ダブルクリック）は、Subject/Sessionの中のScans<-XはEPIフォルダの前
+処理済みファイル（swu….nii, 204ファイル）、New: Conditionsを4回クリックする（1PP\_right
+条件、1PP\_left条件、3PP\_right条件、3PP\_left条件のため）
+        \item 1PP\_right条件については、Name<-Xは1PP\_right、Onsets<-Xはスキャン数を入れる（9）。
+    \end{enumerate}
+
+    \item fMRI model estimation
+    \begin{enumerate}
+        \item Estimateを選択する。
+        \item WorkフォルダのSPM.matを選択する
+    \end{enumerate}
+
+    \item コントラストの作成と結果の表現
+    \begin{enumerate}
+        \item Results を選択し、コントラストを定義。
+        \item 例: 「3PP条件が1PP条件よりも有意に高い活動を示す」コントラスト設定: -1 -1 1 1 Name: 3PP vs. 1PP
+    \end{enumerate}
+\end{enumerate}
+
+\subsection{結果}
+
+\section{脳画像処理4(集団解析)}
+\subsection{目的}
+fMRIデータの集団レベルでの解析手順を学び、オープンデータセットを用いて集団データの解析を行う。
+
+\subsection{実験手順}
+\begin{enumerate}
+    \item デザインマトリックスの作成
+        \begin{enumerate}
+            \item SPMを起動し、Batch Editorで以下を設定：Specify 2nd-level Directory に集団解析結果の保存先フォルダを指定
+            \item One-sample t-test を選択し、スキャンデータ（例: con\_0001.nii）を5人分選択
+        \end{enumerate}
+    \item 推定（Estimation）
+        \begin{enumerate}
+            \item Estimateを選択する
+            \item Select SPM.matでParametric Group AnalysisフォルダのSPM.matを選択し、推定を行う
+        \end{enumerate}
+    \item 解析結果の表示
+        \begin{enumerate}
+            \item Resultsを選択する。Parametric Group AnalysisにあるSPM.matを選択する
+            \item SPM contrast managerが立ち上がるので、個人解析と同様に、contrastを作成する（name: 2nd
+                analysis: 3PP vs. 1PPなど、係数は1でよい）
+            \item Applying masking: none, threshold, 0.001, ＆ extentthreshold, 10で解析
+            \item FWEcの値を読み取り、改めてResultsから解析をし、＆ extent thresholdをFWEcの値にしてみる
+        \end{enumerate}
+\end{enumerate}
+>>>>>>> c99a80c (第5回実験レポート　結果，考察，参考文献以外完了)
 \subsection{結果}
 
 \section{脳画像処理5(その他の解析)}
 \subsection{目的}
+<<<<<<< HEAD
 
 \subsection{方法}
 
+=======
+fMRI（機能的磁気共鳴画像法）を用いた脳の機能的結合性の解析手法を学ぶことである．
+安静時脳活動におけるデフォルトモードネットワーク（DMN）の機能的結合性を解析することで、脳内ネットワークの理解を深めることを目指す．
+\subsection{実験手順}
+\begin{enumerate}
+    \item デフォルトモードネットワーク（DMN）の解析
+    \begin{enumerate}
+        \item DMNに属する主要な脳領域（PCC, MPFC, LPなど）を対象に、機能的結合性を解析
+        \item Seed-to-Voxel解析では、あるROIの主成分と全脳のその他のvoxel間の結合を検証
+        \item ROI-to-ROI解析では、関心領域間の機能的結合を検討
+    \end{enumerate}
+
+    \item PPI解析 
+    \begin{enumerate}
+        \item 課題条件（例えば、3PPと1PP）に基づき、脳領域間の機能的結合に対する心理的プロセスの影響を解析
+    \end{enumerate}
+
+    \item 結果の確認と応用
+    \begin{enumerate}
+        \item 解析結果（脳領域名、座標、結合性の値）を可視化
+        \item 多重比較補正（FDR correction）や仮説検証を行い、解析をさらに発展
+    \end{enumerate}
+\end{enumerate}
+>>>>>>> c99a80c (第5回実験レポート　結果，考察，参考文献以外完了)
 \subsection{結果}
 
 
