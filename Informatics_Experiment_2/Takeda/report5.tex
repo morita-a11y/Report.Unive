@@ -24,7 +24,12 @@
 解析環境（SPM）の設定、操作法を学び以下の実験のための準備を行う。
 また、機能的磁気共鳴画像法（fMRI）の原理を学び説明できるようにする。
 \subsection{方法}
-
+\begin{enumerate}
+    \item MRI, fMRIの原理について理解する <- (2)
+    \item サンプルデータの構造（撮像枚数など）を確認する
+    \item SPMを用いて、サンプルデータの脳解剖画像を確認する（T1フォルダにある）
+    \item SPMを用いて、サンプルデータの脳機能画像を確認する（EPIフォルダにある）
+\end{enumerate}
 \subsection{結果}
 
 \section{脳画像処理2(前処理)}
@@ -32,7 +37,49 @@
 fMRIデータ解析の前段階となる前処理の基本的な手法を学び、オープンデータセットを用いて実際に前処理を
 行う。
 \subsection{方法}
+\begin{enumerate}
+    \item Realignment
+    \begin{enumerate}
+        \item Realign(Estimate)から、Realign ＆ Unwarpを選択
+        \item Batch Editorが立ち上がる
+        \item Data<-XをダブルクリックもしくはSpecifyしData
+の内容を以下のように登録する 
+        \item Images<-Xは各被験者のEPIフォルダにあるすべて
+の.niiファイル（NifTiファイル）を指定する（合計
+204ファイル）。
+        \item Runボタン（▷）を押し実行する 
+    \end{enumerate}
 
+    \item Coregistration
+    \begin{enumerate}
+        \item Coregister (Estimate)を選択する
+        \item Batch Editorの設定は以下
+        \item Reference Image <-XはEPIフォルダのmeansub1\_001.nii,1を指定（被験者1の場合）
+        \item Source imageはT1フォルダにあるsub1\_T1.nii,1を選択する
+        \item 実行する
+    \end{enumerate}
+    \item Segmentation
+    \begin{enumerate}
+        \item Segmentを選択し、以下のBatch Editor設定をする
+        \item VolumesはT1フォルダ内のsub1\_T1.nii
+        \item Save Bias CorrectedはSave Bias Correctedに変更
+        \item Affine RegularisationはEast Asian brainsにする
+        \item 次のステップのNormalisationのためにDeformation FieldsをForwardに変更設定する
+        \item 実行する
+    \end{enumerate}
+    \item Normalisation
+    \begin{enumerate}
+        \item Normalise (Estimate)からNormalise (Write)を選択する
+        \item Data<-Xから、Deformation FieldはT1フォルダのy\_sub1\_T1.niiを選択する
+        \item Image to Write<-XはEPIフォルダの先頭にuが付いた機能画像（Realign＆Unwarp処理をした画
+        像）を選択する。
+        \item Filterに\^uと入力し、usubから始まる204ファイルを選択する
+        \end{enumerate}
+    \item Smoothing
+    \begin{enumerate}
+        \item Smoothを選択する
+        \item Images to smooth<-Xにはnormalisation処理後の機能画像（先頭にwがついている）を指定する  \end{enumerate}
+\end{enumerate}
 \subsection{結果}
 
 \section{脳画像処理3(個人解析)}
@@ -40,22 +87,49 @@ fMRIデータ解析の前段階となる前処理の基本的な手法を学び�
 fMRIデータの個人レベルでの解析手法を学び、オープンデータセットも用いて個人データの解析を
 行う。
 \subsection{方法}
+\begin{enumerate}
+    \item fMRI model specification
+    \begin{enumerate}
+        \item Specify 1st-levelを選択する。
+        \item Directory<-XでWorkフォルダを選択する
+        \item Timing Parametersの設定をする。(Units for design<-XはScans, Interscan interval<-Xは2.5)
+        \item Data ＆ Design<-X（ダブルクリック）は、Subject/Sessionの中のScans<-XはEPIフォルダの前
+処理済みファイル（swu….nii, 204ファイル）、New: Conditionsを4回クリックする（1PP\_right
+条件、1PP\_left条件、3PP\_right条件、3PP\_left条件のため）
+        \item 1PP\_right条件については、Name<-Xは1PP\_right、Onsets<-Xはスキャン数を入れる（9）。
+    \end{enumerate}
+
+    \item fMRI model estimation
+    \begin{enumerate}
+        \item Estimateを選択する。
+        \item WorkフォルダのSPM.matを選択する
+    \end{enumerate}
+
+    \item コントラストの作成と結果の表現
+    \begin{enumerate}
+        \item 
+    \end{enumerate}
+\end{enumerate}
 
 \subsection{結果}
 
-\section{脳画像処理4(集団解析}
+\section{脳画像処理4(集団解析)}
 \subsection{目的}
 fMRIデータの集団レベルでの解析手順を学び、オープンデータセットを用いて集団データの解析を行う。
 
 \subsection{方法}
-
+\begin{enumerate}
+    \item 
+\end{enumerate}
 \subsection{結果}
 
 \section{脳画像処理5(その他の解析)}
 \subsection{目的}
 
 \subsection{方法}
-
+\begin{enumerate}
+    \item 
+\end{enumerate}
 \subsection{結果}
 
 

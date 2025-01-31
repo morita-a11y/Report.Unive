@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Debian)  (format=lualatex 2024.12.25)  24 JAN 2025 10:27
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Debian)  (format=lualatex 2024.12.25)  24 JAN 2025 16:19
  restricted system commands enabled.
 **report5.tex
 (./report5.tex
@@ -709,7 +709,8 @@ LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
 (Font)              scaled to size 12.0pt on input line 24.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] (./report5.aux)
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4] (./report5.aux
+)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -717,25 +718,26 @@ L3 programming layer <2024-01-22>
 )
 
 Here is how much of LuaTeX's memory you used:
- 7567 strings out of 476553
+ 7575 strings out of 476553
  125244,1977958 words of node,token memory allocated
- 918 words of node memory still in use:
-   8 hlist, 1 vlist, 5 rule, 2 glue, 3 kern, 2 glyph, 175 attribute, 48 glue_spe
-c, 25 attribute_list, 1 write, 10 user_defined nodes
-   avail lists: 1:9,2:21103,3:336,4:172,5:74,6:52,7:1938,8:1,9:861,10:19,11:12
- 29385 multiletter control sequences out of 65536+600000
+ 894 words of node memory still in use:
+   8 hlist, 1 vlist, 5 rule, 2 glue, 3 kern, 2 glyph, 164 attribute, 48 glue_spe
+c, 24 attribute_list, 1 write, 10 user_defined nodes
+   avail lists: 1:9,2:29341,3:387,4:270,5:117,6:66,7:3511,8:1,9:934,10:19,11:120
+
+ 29393 multiletter control sequences out of 65536+600000
  46 fonts using 44335631 bytes
- 107i,6n,101p,1748b,292s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 107i,6n,101p,1748b,359s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf/fonts/opentype/public/lm/lmroman9-regular.otf></usr/share/texm
 f/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texlive/texmf-dist/
 fonts/opentype/public/haranoaji/HaranoAjiGothic-Medium.otf></usr/share/texmf/fon
 ts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/
 lm/lmroman12-regular.otf></usr/share/texlive/texmf-dist/fonts/opentype/public/ha
 ranoaji/HaranoAjiMincho-Regular.otf>
-Output written on report5.pdf (3 pages, 55729 bytes).
+Output written on report5.pdf (4 pages, 77480 bytes).
 
-PDF statistics: 56 PDF objects out of 1000 (max. 8388607)
- 32 compressed objects within 1 object stream
+PDF statistics: 59 PDF objects out of 1000 (max. 8388607)
+ 34 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 131072)
  1 words of extra memory for PDF output out of 10000 (max. 100000000)
 
