@@ -2,7 +2,7 @@
 \usepackage{url}
 \usepackage{listings}
 \usepackage{graphicx} 
-
+\usepackage{float}
 \title{第５回 レポート}
 \author{森田 蓮}
 \date{2025年 1月25日}
@@ -12,42 +12,76 @@
 \maketitle
 
 \section{目的}
-本実験に用いるfMRIは数ある非侵襲的脳機能イメージング法の中でも信頼性が高く、
-基礎・臨床医学のみならず、心理学や工学などさまざまな領域において活用
-されている。
-本実験の目的は、「fMRIデータの解析でよく用いられているSPM
-（Statistical Parametric Mapping）を用いて、fMRIデータの基礎的な解析
-手順を実践的に学ぶ」ことである。
+本実験に用いるfMRIは数ある非侵襲的脳機能イメージング法の中でも信頼性が高く，
+基礎・臨床医学のみならず，心理学や工学などさまざまな領域において活用されている．
+本実験の目的は，「fMRIデータの解析でよく用いられているSPM（Statistical Parametric Mapping）を用いて，
+fMRIデータの基礎的な解析手順を実践的に学ぶ」ことである．
 
-\section{脳画像処理1(MRI画像、課題関連脳活動と安静時脳活動)}
+\section{脳画像処理1(MRI画像，課題関連脳活動と安静時脳活動)}
 \subsection{目的}
-解析環境（SPM）の設定、操作法を学び以下の実験のための準備を行う。
-また、機能的磁気共鳴画像法（fMRI）の原理を学び説明できるようにする。
+解析環境（SPM）の設定，操作法を学び以下の実験のための準備を行う．
+また，機能的磁気共鳴画像法（fMRI）の原理を学び説明できるようにする．
 \subsection{実験手順}
 \begin{enumerate}
     \item MRI, fMRIの原理について理解する 
     \item サンプルデータの構造（撮像枚数など）を確認する
-    \item SPMを用いて、サンプルデータの脳解剖画像を確認する（T1フォルダにある）
-    \item SPMを用いて、サンプルデータの脳機能画像を確認する（EPIフォルダにある）
+    \item SPMを用いて，サンプルデータの脳解剖画像を確認する（T1フォルダにある）
+    \item SPMを用いて，サンプルデータの脳機能画像を確認する（EPIフォルダにある）
 \end{enumerate}
 \subsection{結果}
-実験手順１についてはMRI（磁気共鳴画像法）は、強力な磁場とラジオ波を利用して体内の構造を詳細に観察する技術である．水素原子の核（プロトン）が磁場の影響を受けて整列し、ラジオ波パルスによってエネルギーを吸収・放出する過程で生成される信号を解析して画像を作成する。
-また，fMRI（機能的磁気共鳴画像法）は、MRIの技術を応用して脳の活動をリアルタイムで観察する技術である。脳の活動に伴う血流の変化を検出し、酸素化ヘモグロビンと脱酸素化ヘモグロビンの磁気特性の違いを利用して、脳のどの部分が活動しているかを画像として表示する。
+実験手順１についてはMRI（磁気共鳴画像法）は，強力な磁場とラジオ波を利用して体内の構造を詳細に観察する技術である．水素原子の核（プロトン）が磁場の影響を受けて整列し，ラジオ波パルスによってエネルギーを吸収・放出する過程で生成される信号を解析して画像を作成する．
+また，fMRI（機能的磁気共鳴画像法）は，MRIの技術を応用して脳の活動をリアルタイムで観察する技術である．脳の活動に伴う血流の変化を検出し，酸素化ヘモグロビンと脱酸素化ヘモグロビンの磁気特性の違いを利用して，脳のどの部分が活動しているかを画像として表示する．
+
+実験手順2:
+サンプルデータの構造を確認した結果，撮像枚数がEPIデータでは204枚，T1データでは1枚であることを確認した（図1参照）．
+
+
+実験手順3: 脳解剖画像の確認を行った（T1フォルダ）
+SPMを用いてサンプルデータのT1画像を表示した（図2参照）．画像では被験者の脳の解剖学的構造が鮮明に表示されており，3点からの
+脳の断面を確認することができた．
+
+
+実験手順4: 脳機能画像の確認（EPIフォルダ）
+SPMを用いてEPI画像を表示した結果，脳機能画像における信号強度の変化が確認された（図3参照）．これにより，被験者の脳活動を基にした解析が可能であることが確認された．
+
+\begin{figure}[H]
+    \centering
+        \begin{minipage}{0.25\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{dilectoli1.jpg}
+        \caption{ディレクトリ構造}
+        \label{fig:brain_T1}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.2\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{1_1.png}
+        \caption{T1画像}
+        \label{fig:brain_T1}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.2\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{1_2.png}
+        \caption{EPI画像}
+        \label{fig:brain_EPI}
+    \end{minipage}
+\end{figure}
+
 \section{脳画像処理2(前処理)}
 \subsection{目的}
-fMRIデータ解析の前段階となる前処理の基本的な手法を学び、オープンデータセットを用いて実際に前処理を
-行う。
+fMRIデータ解析の前段階となる前処理の基本的な手法を学び，オープンデータセットを用いて実際に前処理を行う．
 \subsection{実験手順}
 \begin{enumerate}
     \item Realignment
     \begin{enumerate}
-        \item Realign(Estimate)から、Realign ＆ Unwarpを選択
+        \item Realign(Estimate)から，Realign ＆ Unwarpを選択
         \item Batch Editorが立ち上がる
         \item Data<-XをダブルクリックもしくはSpecifyしData
 の内容を以下のように登録する 
         \item Images<-Xは各被験者のEPIフォルダにあるすべて
 の.niiファイル（NifTiファイル）を指定する（合計
-204ファイル）。
+204ファイル）．
         \item Runボタン（▷）を押し実行する 
     \end{enumerate}
 
@@ -61,7 +95,7 @@ fMRIデータ解析の前段階となる前処理の基本的な手法を学び�
     \end{enumerate}
     \item Segmentation
     \begin{enumerate}
-        \item Segmentを選択し、以下のBatch Editor設定をする
+        \item Segmentを選択し，以下のBatch Editor設定をする
         \item VolumesはT1フォルダ内のsub1\_T1.nii
         \item Save Bias CorrectedはSave Bias Correctedに変更
         \item Affine RegularisationはEast Asian brainsにする
@@ -71,10 +105,10 @@ fMRIデータ解析の前段階となる前処理の基本的な手法を学び�
     \item Normalisation
     \begin{enumerate}
         \item Normalise (Estimate)からNormalise (Write)を選択する
-        \item Data<-Xから、Deformation FieldはT1フォルダのy\_sub1\_T1.niiを選択する
+        \item Data<-Xから，Deformation FieldはT1フォルダのy\_sub1\_T1.niiを選択する
         \item Image to Write<-XはEPIフォルダの先頭にuが付いた機能画像（Realign＆Unwarp処理をした画
-        像）を選択する。
-        \item Filterに\^uと入力し、usubから始まる204ファイルを選択する
+        像）を選択する．
+        \item Filterに\^uと入力し，usubから始まる204ファイルを選択する
         \end{enumerate}
     \item Smoothing
     \begin{enumerate}
@@ -83,99 +117,287 @@ fMRIデータ解析の前段階となる前処理の基本的な手法を学び�
     \end{enumerate}
 \end{enumerate}
 \subsection{結果}
+前処理手順に従い，以下の通り各ステップが実行されました．
+実験手順1:Realignment
+すべての被験者データに対してRealignmentが正常に実行され，EPI画像の時間的揺れが補正されました．Graphicsウィンドウに結果が表示され• X, Y, Z軸のずれおよびそれぞれの軸を中心とした回転（pitch, roll, yaw）を示すグラフが表示された．(図4参照）処理後の画像では，動きの補正が確認できた．(図5参照)
+また，Realigmentを行うことで使用したsubから始まる.niiファイルの先頭にuがついたファイルが同数生成されることが確認できた．
 
+
+実験手順2: Coregistration
+T1画像とEPI画像のCoregistrationが成功し，両者が適切に重ね合わせられた．具体的には，meanEPI画像とT1画像が正確に位置合わせされており，解剖学的な構造が視覚的に一致していることが確認された．(図６参照)
+
+
+実験手順3: Segmentation
+T1画像に対するセグメンテーションが実施され，白質，灰白質，脳脊髄液（CSF）が適切に識別された．セグメンテーション後，各組織が異なる領域として区別され，結果として脳構造の明確な区分けが得られた．(図7参照)
+
+実験手順4: Normalization
+Normalization処理により，機能画像がMNI空間に正確にマッピングされた．処理後の画像では，標準空間における脳の解剖学的構造が正確に再現された．(図8参照)
+
+実験手順5: Smoothing 
+正常化された画像に対して平滑化処理が実行され，ノイズが低減し，信号対雑音比が改善された．
+
+
+\begin{figure}[H]
+    \centering
+        \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{2_1.png}
+        \caption{結果グラフ}
+        \label{fig:brain_T1}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{2_2.png}
+        \caption{Realignment画像}
+        \label{fig:brain_T1}
+    \end{minipage}
+    \hfill
+\end{figure}
+
+
+\begin{figure}[h]
+    \centering
+        \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{2_3.png}
+        \caption{Coregistration後画像}
+        \label{fig:brain_T1}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{2_4.png}
+        \caption{Segmentation後画像}
+        \label{fig:brain_T1}
+    \end{minipage}
+    \hfill
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+        \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{2_5.png}
+        \caption{Normalization後画像}
+        \label{fig:brain_T1}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{2_6.png}
+        \caption{Smoothing後画像}
+        \label{fig:brain_T1}
+    \end{minipage}
+    \hfill
+\end{figure}
 \section{脳画像処理3(個人解析)}
 \subsection{目的}
-fMRIデータの個人レベルでの解析手法を学び、オープンデータセットも用いて個人データの解析を
-行う。
+fMRIデータの個人レベルでの解析手法を学び，オープンデータセットも用いて個人データの解析を
+行う．
 \subsection{実験手順}
 \begin{enumerate}
     \item fMRI model specification
     \begin{enumerate}
-        \item Specify 1st-levelを選択する。
+        \item Specify 1st-levelを選択する．
         \item Directory<-XでWorkフォルダを選択する
-        \item Timing Parametersの設定をする。(Units for design<-XはScans, Interscan interval<-Xは2.5)
-        \item Data ＆ Design<-X（ダブルクリック）は、Subject/Sessionの中のScans<-XはEPIフォルダの前
-処理済みファイル（swu….nii, 204ファイル）、New: Conditionsを4回クリックする（1PP\_right
-条件、1PP\_left条件、3PP\_right条件、3PP\_left条件のため）
-        \item 1PP\_right条件については、Name<-Xは1PP\_right、Onsets<-Xはスキャン数を入れる（9）。
+        \item Timing Parametersの設定をする．(Units for design<-XはScans, Interscan interval<-Xは2.5)
+        \item Data ＆ Design<-X（ダブルクリック）は，Subject/Sessionの中のScans<-XはEPIフォルダの前
+        処理済みファイル（swu….nii, 204ファイル），New: Conditionsを4回クリックする（1PP\_right
+        条件，1PP\_left条件，3PP\_right条件，3PP\_left条件のため）
+        \item 1PP\_right条件については，Name<-Xは1PP\_right，Onsets<-Xはスキャン数を入れる（9）．
     \end{enumerate}
 
     \item fMRI model estimation
     \begin{enumerate}
-        \item Estimateを選択する。
+        \item Estimateを選択する．
         \item WorkフォルダのSPM.matを選択する
     \end{enumerate}
 
     \item コントラストの作成と結果の表現
     \begin{enumerate}
-        \item Results を選択し、コントラストを定義。
+        \item Results を選択し，コントラストを定義．
         \item 例: 「3PP条件が1PP条件よりも有意に高い活動を示す」コントラスト設定: -1 -1 1 1 Name: 3PP vs. 1PP
     \end{enumerate}
 \end{enumerate}
 
+
+
+
+
+
 \subsection{結果}
+実験手順１: Timing Parametersを設定し，4つの条件（1PP\_right，1PP\_left，3PP\_right，3PP\_left）のデータを入力した．解析ができる状態になった．
+
+実験手順２: fMRI model estimationでSPM.matファイルを用いて推定する．これにより，個人のfMRIデータに基づく統計モデルが構築される．
+
+実験手順３: 3PP条件と1PP条件を比較するコントラスト（-1 -1 1 1）を作成し，「3PP条件が1PP条件よりも有意に高い活動を示す」かどうかを確認する．このコントラスト設定により，特定の脳領域における有意な活動の違いが確認できた．(図10,11,12,13参照)
+
+\begin{figure}[H]
+    \centering
+        \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{3_1.png}
+        \caption{有意な脳活動のマップ}
+        \label{fig:brain_T1}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{2_7.png}
+        \caption{脳スライス全体での活動の様子}
+        \label{fig:brain_T1}
+    \end{minipage}
+    \hfill
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+        \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{3PPVS1PPover.jpg}
+        \caption{脳の断面図に活動を重ねる}
+        \label{fig:brain_T1}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{3PPvs1PPrender.jpg}
+        \caption{脳表層に活動を重ねる}
+        \label{fig:brain_T1}
+    \end{minipage}
+    \hfill
+\end{figure}
 
 \section{脳画像処理4(集団解析)}
 \subsection{目的}
-fMRIデータの集団レベルでの解析手順を学び、オープンデータセットを用いて集団データの解析を行う。
+fMRIデータの集団レベルでの解析手順を学び，オープンデータセットを用いて集団データの解析を行う．
 
 \subsection{実験手順}
 \begin{enumerate}
     \item デザインマトリックスの作成
         \begin{enumerate}
-            \item SPMを起動し、Batch Editorで以下を設定：Specify 2nd-level Directory に集団解析結果の保存先フォルダを指定
-            \item One-sample t-test を選択し、スキャンデータ（例: con\_0001.nii）を5人分選択
+            \item SPMを起動し，Batch Editorで以下を設定：Specify 2nd-level Directory に集団解析結果の保存先フォルダを指定
+            \item One-sample t-test を選択し，スキャンデータ（例: con\_0001.nii）を5人分選択
         \end{enumerate}
     \item 推定（Estimation）
         \begin{enumerate}
             \item Estimateを選択する
-            \item Select SPM.matでParametric Group AnalysisフォルダのSPM.matを選択し、推定を行う
+            \item Select SPM.matでParametric Group AnalysisフォルダのSPM.matを選択し，推定を行う
         \end{enumerate}
     \item 解析結果の表示
         \begin{enumerate}
-            \item Resultsを選択する。Parametric Group AnalysisにあるSPM.matを選択する
-            \item SPM contrast managerが立ち上がるので、個人解析と同様に、contrastを作成する（name: 2nd
-                analysis: 3PP vs. 1PPなど、係数は1でよい）
+            \item Resultsを選択する．Parametric Group AnalysisにあるSPM.matを選択する
+            \item SPM contrast managerが立ち上がるので，個人解析と同様に，contrastを作成する（name: 2nd
+                analysis: 3PP vs. 1PPなど，係数は1でよい）
             \item Applying masking: none, threshold, 0.001, ＆ extentthreshold, 10で解析
-            \item FWEcの値を読み取り、改めてResultsから解析をし、＆ extent thresholdをFWEcの値にしてみる
+            \item FWEcの値を読み取り，改めてResultsから解析をし，＆ extent thresholdをFWEcの値にする
         \end{enumerate}
 \end{enumerate}
 \subsection{結果}
+実験手順１:デザインマトリックスの作成
+One-sample t-testを用い，5人分のスキャンデータ（例: con\_0001.nii）を適切に指定し，集団データの解析に向けて準備ができた．
 
+実験手順２: Estimationを行い次の手順で結果を表示する．
+
+実験手順３: 解析結果を表示するために，Resultsオプションを選択し，指定されたコントラスト（例: 3PP vs. 1PP）の解析を行った．解析結果では，指定した閾値（p < 0.001, extent threshold = 10）で有意な脳活動が確認された．（図14参照）
+さらに，FWEc補正後の結果を再解析し，修正された閾値に基づいて新たな有意な脳領域が確認できた．（図15参照）
+次に，3PP vs. 1PP以外のコントラストを試した．たとえば，2PP vs. 1PPを比較することで，異なる条件間での脳活動の差異を調べた．
+結果から，2PP条件において有意な脳活動の増加が観察された．（図16参照）特に，前頭葉および運動皮質領域での反応が顕著に現れた．
+\begin{figure}[H]
+    \centering
+        \begin{minipage}{0.4\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{4_1.png}
+        \caption{閾値10 3PP vs 1PP}
+        \label{fig:brain_T1}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.4\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{4_2.png}
+        \caption{閾値 FWEc値 3PP vs 1PP}
+        \label{fig:brain_T1}
+    \end{minipage}
+    \hfill
+\end{figure}
+
+
+\begin{figure}[H]
+    \centering
+        \begin{minipage}{0.4\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{4_3.png}
+        \caption{2PP vs 1PP}
+        \label{fig:brain_T1}
+    \end{minipage}
+
+\end{figure}
 \section{脳画像処理5(その他の解析)}
 \subsection{目的}
 fMRI（機能的磁気共鳴画像法）を用いた脳の機能的結合性の解析手法を学ぶことである．
-安静時脳活動におけるデフォルトモードネットワーク（DMN）の機能的結合性を解析することで、脳内ネットワークの理解を深めることを目指す．
+安静時脳活動におけるデフォルトモードネットワーク（DMN）の機能的結合性を解析することで，脳内ネットワークの理解を深めることを目指す．
 \subsection{実験手順}
 \begin{enumerate}
     \item デフォルトモードネットワーク（DMN）の解析
     \begin{enumerate}
-        \item DMNに属する主要な脳領域（PCC, MPFC, LPなど）を対象に、機能的結合性を解析
-        \item Seed-to-Voxel解析では、あるROIの主成分と全脳のその他のvoxel間の結合を検証
-        \item ROI-to-ROI解析では、関心領域間の機能的結合を検討
+        \item DMNに属する主要な脳領域（PCC, MPFC, LPなど）を対象に，機能的結合性を解析
+        \item Seed-to-Voxel解析では，あるROIの主成分と全脳のその他のvoxel間の結合を検証
+        \item ROI-to-ROI解析では，関心領域間の機能的結合を検討
     \end{enumerate}
 
     \item PPI解析 
     \begin{enumerate}
-        \item 課題条件（例えば、3PPと1PP）に基づき、脳領域間の機能的結合に対する心理的プロセスの影響を解析
+        \item 課題条件（例えば，3PPと1PP）に基づき，脳領域間の機能的結合に対する心理的プロセスの影響を解析
     \end{enumerate}
 
     \item 結果の確認と応用
     \begin{enumerate}
-        \item 解析結果（脳領域名、座標、結合性の値）を可視化
-        \item 多重比較補正（FDR correction）や仮説検証を行い、解析をさらに発展
+        \item 解析結果（脳領域名，座標，結合性の値）を可視化
+        \item 多重比較補正（FDR correction）や仮説検証を行い，解析をさらに発展
     \end{enumerate}
 \end{enumerate}
 \subsection{結果}
 
+実施手順１: デフォルトモードネットワーク（DMN）の解析  
+
+ROI-to-ROI解析の結果（図17,18,19）が出力された．
 
 
+\begin{figure}[H]
+    \centering
+        \begin{minipage}{0.25\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{DMNfirstlevel.png}
+        \caption{CONN (1st level analysis)}
+        \label{fig:brain_T1}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.2\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{DMNsecondlevel.png}
+        \caption{CONN (2nd level analysis)}
+        \label{fig:brain_T1}
+    \end{minipage}
+    \hfill
+    \begin{minipage}{0.2\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{DMNseconds.png}
+        \caption{Another CONN (2nd level analysis)}
+        \label{fig:brain_EPI}
+    \end{minipage}
+\end{figure}
 \section{考察}
+解析技術では，従来の方法に加え機械学習やディープラーニングを活用した解析が進展している．これにより，大規模なデータセットから複雑なパターンを抽出することが可能となり，個人間の差異をより詳細に解析できるようになっている．しかし，これらの解析手法には計算負荷が大きい点や，解釈可能性の低さといった課題が存在する．
 
+今後，fMRIの撮像技術と解析技術が進化することで，脳科学研究への貢献がさらに拡大すると考えられる．撮像技術においては，超高磁場強度装置（10T以上）の開発が期待されており，これにより空間分解能がさらに向上し，個々のニューロンレベルの観察が可能になる可能性がある．
 
+解析技術の発展においては，より効率的で解釈可能な機械学習モデルの開発が鍵となる．特に，AIの導入により，解析結果の透明性が向上し，研究者が得られた結果を脳の機能と結びつけやすくなると期待される．また，ビッグデータ解析の分野で進展しているクラウドコンピューティング技術を活用することで，より多くのデータを迅速に処理できる環境が整うと考えられる．
 
-\section*{参考文献}
+さらに，このAIを現代の医療に落とし込むことで今からの脳の患者についても早期発見ができより多くの命を救うことが可能になると考える．
+
+以上を踏まえると，fMRI技術のさらなる発展は，空間分解能と時間分解能の向上，新しい撮像法の開発，そして解析技術の効率化と解釈性の向上を中心に進むべきである．このような技術革新により，fMRIは脳科学研究・現代医学においてより多くの貢献を果たす考えられる．
+
 \begin{thebibliography}{9}
 
 \bibitem{video1}
@@ -188,6 +410,7 @@ YouTube, ``Understanding MRI and fMRI'', \url{https://www.youtube.com/watch?v=jL
 YouTube, ``MRI vs fMRI: What's the Difference?'', \url{https://www.youtube.com/watch?v=rJjHjnzmvDI}, accessed January 25, 2025.
 
 \end{thebibliography}
+
 
 
 \end{document}
