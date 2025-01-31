@@ -1,7 +1,7 @@
-This is LuaHBTeX, Version 1.14.0 (TeX Live 2022/dev/Debian)  (format=lualatex 2024.12.25)  9 JAN 2025 19:08
+This is LuaHBTeX, Version 1.14.0 (TeX Live 2022/dev/Debian)  (format=lualatex 2024.12.25)  29 JAN 2025 00:34
  restricted system commands enabled.
-**report4.tex
-(./report4.tex
+**report.tex
+(./report.tex
 LaTeX2e <2021-11-15> patch level 1
 Lua module: luaotfload 2021-05-21 3.18 Lua based OpenType font support
 Lua module: lualibs 2021-05-20 2.74 ConTeXt Lua standard libraries.
@@ -661,8 +661,8 @@ Package: multicol 2021/10/28 v1.9b multicolumn formatting (FMi)
 \mult@nat@firstbox=\box123
 \colbreak@box=\box124
 \mc@col@check@num=\count300
-) (./report4.aux)
-\openout1 = report4.aux
+) (./report.aux)
+\openout1 = report.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
 LaTeX Font Info:    ... okay on input line 24.
@@ -777,127 +777,31 @@ LaTeX Font Info:    Font shape `JY3/gt/b/n' in size <14> not available
 (Font)              Font shape `JY3/gt/m/n' tried instead on input line 29.
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
 (Font)              scaled to size 14.0pt on input line 29.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 48.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 48.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 48.
-LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 7.0pt on input line 48.
-LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 5.0pt on input line 48.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}](load cache: extra_lmroman10
--bold.luc)
-LaTeX Font Info:    Font shape `JT3/mc/b/n' in size <10> not available
-(Font)              Font shape `JT3/gt/m/n' tried instead on input line 66.
-LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
-(Font)              scaled to size 10.0pt on input line 66.
-LaTeX Font Info:    Font shape `JY3/mc/b/n' in size <10> not available
-(Font)              Font shape `JY3/gt/m/n' tried instead on input line 66.
-LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 10.0pt on input line 66.
-(load cache: extra_lmsans9-regular.luc)
-LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 74.
-LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 74.
-LaTeX Font Info:    Font shape `JT3/gt/b/n' in size <8.99994> not available
-(Font)              Font shape `JT3/gt/m/n' tried instead on input line 74.
-LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 74.
-LaTeX Font Info:    Font shape `JY3/gt/b/n' in size <8.99994> not available
-(Font)              Font shape `JY3/gt/m/n' tried instead on input line 74.
-LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 74.
-(load cache: extra_lmmono10-regular.luc)
-Overfull \hbox (19.6539pt too wide) in paragraph at lines 84--87
-[]\TU/lmr/m/n/10 Geeks-forGeeks, Bub-ble Sort Al-go-rithm, $\TU/lmtt/m/n/10 http
-s://www.geeksforgeeks.org/bubble-[]sort-[]algorithm/$\TU/lmr/m/n/10 ,
- []
-
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2020/03/24 1.8d listings language file
-)
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang2.sty
-File: lstlang2.sty 2020/03/24 1.8d listings language file
-)
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang3.sty
-File: lstlang3.sty 2020/03/24 1.8d listings language file
-)
-
-! Package Listings Error: Couldn't load requested language.
-
-See the Listings package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.93     \begin{lstlisting}[language=x86]
-                                       
-The following languages weren't loadable:
-    ,x86$
-This may cause errors in the sequel.
-
-
-! Package Listings Error: language x86 undefined.
-
-See the Listings package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.93     \begin{lstlisting}[language=x86]
-                                       
-The language is not loadable. Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-Removing  `ltj.process_input_buffer' from `process_input_buffer'.
-Inserting `ltj.listings_unicode' at position 1 in `process_input_buffer'.
-Inserting `ltj.process_input_buffer' at position 2 in `process_input_buffer'.(lo
-ad cache: extra_lmroman5-regular.luc)
-LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
-(Font)              scaled to size 5.0pt on input line 94.
-[2]
-Removing  `ltj.listings_unicode' from `process_input_buffer'. (/usr/share/texli
-ve/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2020/03/24 1.8d listings language file
-)
-Removing  `ltj.process_input_buffer' from `process_input_buffer'.
-Inserting `ltj.listings_unicode' at position 1 in `process_input_buffer'.
-Inserting `ltj.process_input_buffer' at position 2 in `process_input_buffer'.
-Removing  `ltj.listings_unicode' from `process_input_buffer'. [3]
-(./report4.aux))
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] (./report.aux))
 
 Here is how much of LuaTeX's memory you used:
- 8690 strings out of 477805
- 933267,794899 words of node,token memory allocated
- 27758 words of node memory still in use:
-   9 hlist, 1 vlist, 5 rule, 2 glue, 7 kern, 2 glyph, 10962 attribute, 419 glue_
-spec, 596 attribute_list, 1 write, 570 user_defined nodes
-   avail lists: 1:36,2:153578,3:343,4:18491,5:13695,6:120,7:10402,8:52,9:26278,1
-0:39,11:798
- 28974 multiletter control sequences out of 65536+600000
- 62 fonts using 56819599 bytes
- 106i,9n,98p,1748b,995s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texmf/fonts/opentype/public/lm/lmmono9-regular.otf></usr/share/texmf
-/fonts/opentype/public/lm/lmroman5-regular.otf></usr/share/texmf/fonts/opentype/
-public/lm/lmmono10-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroma
-n10-bold.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman9-regular.otf>{/u
-sr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvip
-s/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/share/te
-xmf/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texlive/texmf-dis
-t/fonts/opentype/public/haranoaji/HaranoAjiGothic-Medium.otf></usr/share/texmf/f
-onts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/publi
-c/lm/lmroman12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman17-
-regular.otf></usr/share/texlive/texmf-dist/fonts/opentype/public/haranoaji/Haran
-oAjiMincho-Regular.otf></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/
-share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public
-/lm/lmsy10.pfb>
-Output written on report4.pdf (3 pages, 115160 bytes).
+ 8387 strings out of 477805
+ 156562,552014 words of node,token memory allocated
+ 2625 words of node memory still in use:
+   8 hlist, 1 vlist, 5 rule, 2 glue, 3 kern, 2 glyph, 703 attribute, 161 glue_sp
+ec, 40 attribute_list, 1 write, 24 user_defined nodes
+   avail lists: 1:33,2:49585,3:420,4:158,5:96,6:33,7:2716,8:2,9:1213,10:39,11:4
+ 28703 multiletter control sequences out of 65536+600000
+ 43 fonts using 40284887 bytes
+ 106i,6n,98p,1747b,288s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texmf/fonts/opentype/public/lm/lmroman9-regular.otf></usr/share/texm
+f/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texlive/texmf-dist/
+fonts/opentype/public/haranoaji/HaranoAjiGothic-Medium.otf></usr/share/texmf/fon
+ts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf/fonts/opentype/public/
+lm/lmroman12-regular.otf></usr/share/texmf/fonts/opentype/public/lm/lmroman17-re
+gular.otf></usr/share/texlive/texmf-dist/fonts/opentype/public/haranoaji/HaranoA
+jiMincho-Regular.otf>
+Output written on report.pdf (2 pages, 70576 bytes).
 
-PDF statistics: 106 PDF objects out of 1000 (max. 8388607)
- 64 compressed objects within 1 object stream
+PDF statistics: 60 PDF objects out of 1000 (max. 8388607)
+ 34 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 131072)
  1 words of extra memory for PDF output out of 10000 (max. 100000000)
 

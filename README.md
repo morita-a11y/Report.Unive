@@ -37,11 +37,18 @@
 
 
 
-\section*{参考文献}
-浜元信州, 井田寿朗, 齋藤貴英, 酒井秀晃, 小田切貴志, 横山重俊，
-動的VLANを利用した全学認証ネットワークの構築  
-, 2016 年 20 巻 1 号 p. 65-74  
-\url{https://www.jstage.jst.go.jp/article/jacn/20/1/20_JACN20-1-8/_article/-char/ja/}
+\begin{thebibliography}{9}
+
+\bibitem{video1}
+YouTube, ``MRI and fMRI Principles Explained'', \url{https://www.youtube.com/watch?v=NlYXqRG7lus}, accessed January 25, 2025.
+
+\bibitem{video2}
+YouTube, ``Understanding MRI and fMRI'', \url{https://www.youtube.com/watch?v=jLnuPKhKXVM}, accessed January 25, 2025.
+
+\bibitem{video3}
+YouTube, ``MRI vs fMRI: What's the Difference?'', \url{https://www.youtube.com/watch?v=rJjHjnzmvDI}, accessed January 25, 2025.
+
+\end{thebibliography}
 
 \section*{付録}
 

@@ -1,0 +1,66 @@
+\documentclass{jlreq}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{multicol}
+ 
+\lstset{
+    basicstyle=\ttfamily\small,
+    numbers=left,
+    numberstyle=\tiny\color{gray},
+    keywordstyle=\color{blue},
+    commentstyle=\color{green!50!black},
+    stringstyle=\color{orange},
+    frame=single,
+    tabsize=4,
+    breaklines=true
+}
+
+\title{演習3 - レポート課題}
+\author{森田 蓮}
+\date{2025年 1月28日}
+
+\begin{document}
+
+\maketitle
+
+\section{目的}
+本演習では，バッファオーバーフロー (Buffer Overflow) 脆弱性を悪用した攻撃手法と，その対策について学ぶ．
+この脆弱性は，プログラムが入力データのサイズを適切に検証せずにメモリに格納することで発生する．
+本レポートでは，脆弱性の原因，攻撃手法，及びその防止策について学んだことを説明する．
+
+\section{学んだことを}
+バッファオーバーフローとは，固定サイズのバッファ（配列など）に対して，許容サイズを超えるデータを書き込むことにより，
+メモリの隣接領域が上書きされる問題を指す．
+gets()関数は入力データの長さを制限しないため，64バイトを超えるデータを入力すると，
+スタックに保存されている他のデータ（例えばリターンアドレス）が上書きされる可能性がある．
+
+\section{攻撃手法}
+演習では，以下の手順を通じて攻撃を実行した．
+\begin{enumerate}
+    \item ソースコードの解析: ソースコードを確認し，
+    脆弱性のある箇所（gets()関数の使用）を特定できた．
+    また，未使用のshell()関数が含まれており，
+    これを悪用してシェルを起動することが可能であると判断した．
+    \item アドレスの特定:実行ファイルを逆アセンブルして，shell()関数とリターンアドレスの位置を特定する．
+    \item 攻撃コードの作成:Pwntoolsを使用して，攻撃コードを作成する．
+\end{enumerate}
+
+\section{防御手法}
+gets()関数の代わりにfgets()関数を使用し，入力データの長さを制限する．
+この操作により，バッファサイズ以上の文字列を読み込まないようにできた．
+
+\section{感想}
+今回の演習は，とても難しくこのレポートを書いていて調べている中で学べることが
+多い演習だったと感じた．
+座学だけではイメージができないことが実際に動作するところを見ることで
+危険性が理解できた．
+自分で作る任意のコードを実行できることはとても怖いことだとこの3回の
+演習を行って感じた．
+危険な関数があることを知ってなぜ危険なのかを理解できた．
+これからのたくさんのコーディングを行う際に危険な関数を使ってユーザに
+不利益を被らないような技術者になりたいと思う．
+
+
+\end{document}
