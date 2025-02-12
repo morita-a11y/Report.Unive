@@ -30,6 +30,10 @@
 
 \section{方法}
 
+\begin{enumerate}
+    \item 
+\end{enumerate}
+
 \section{結果}
 
 

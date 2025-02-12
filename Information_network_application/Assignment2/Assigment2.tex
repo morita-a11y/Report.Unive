@@ -5,38 +5,84 @@
 \usepackage{xcolor}
 \usepackage{multicol}
  
-\lstset{
-    basicstyle=\ttfamily\small,
-    numbers=left,
-    numberstyle=\tiny\color{gray},
-    keywordstyle=\color{blue},
-    commentstyle=\color{green!50!black},
-    stringstyle=\color{orange},
-    frame=single,
-    tabsize=4,
-    breaklines=true
-}
-
-\title{Assigment2}
+\title{第5回 実験レポート}
 \author{森田 蓮}
-\date{2025年 1月28日}
+\date{2025年 1月27日}
 
 \begin{document}
 
 \maketitle
 
 \section{目的}
-
+本レポートでは、TCP を利用したクライアントプログラムの動作を確認し、その仕様や実装について考察する。
 
 \section{方法}
 
-\section{結果}
+\begin{enumerate}
+    \item クライアントプログラムを実装し、TCP を用いた通信を行う。
+    \item プログラムの仕様を整理し、コードの詳細を分析する。
+    \item 実行結果を記録し、動作の確認を行う。
+    \item 実装の課題点や改善点を考察する。
+\end{enumerate}
 
+\section{仕様}
+
+本プログラムは、TCP を利用したクライアントプログラムであり、サーバーとの通信を行う。標準入力からの入力をサーバーへ送信し、サーバーからの応答を標準出力に表示する。
+
+\begin{itemize}
+    \item Socket API を用い，コマンドライン引数で指定されたホスト名とポート番号のサーバーにTCPで接続する．
+    \item ホスト名の名前解決には getaddrinfo を用いる．
+    \item 入出力には read(2), write(2) を用いる．
+    \item read(2), write(2) は講義中に説明した注意を守ること．そのような write(2) 呼び出しを関数として独立させて，他からは write(2) 直接ではなく，その関数を呼び出すようにするとよい．
+    \item サーバーと接続したソケットおよび標準入力の2つを select() で監視することが望ましい．
+    \item もし標準入力から入力があったら，その内容をサーバーへ送信する．
+    \item もしサーバーからデータを受信したら，それを標準出力へ出力する．
+    \item どちらかが EOF になるか，エラーが発生するまで上記を繰り返す．
+    \item サーバーとの接続を切断して終了する．
+\end{itemize}
+
+\section{プログラムの説明}
+
+\subsection{safe_write 関数}
+
+\begin{verbatim}
+    ssize_t safe_write(int fd, const void *buf, size_t count)
+\end{verbatim}
+
+この関数は、安全にデータを送信するための関数であり、writeシステムコールが途中で中断された場合にもリトライする。
+
+\subsection{ソケットの作成と接続}
+
+\begin{verbatim}
+    sockfd = socket(r->ai_family, r->ai_socktype, r->ai_protocol);
+    connect(sockfd, r->ai_addr, r->ai_addrlen);
+\end{verbatim}
+
+指定されたサーバーに対してソケットを作成し、接続を試みる。
+
+\subsection{select を使用した非同期通信}
+
+\begin{verbatim}
+    FD_ZERO(&read_fds);
+    FD_SET(STDIN_FILENO, &read_fds);
+    FD_SET(sockfd, &read_fds);
+    select(max_fd + 1, &read_fds, NULL, NULL, NULL);
+\end{verbatim}
+
+selectを用いることで、標準入力とサーバーの両方のデータを同時に監視し、データが到着した場合に処理を実行する。
 
 \section{考察}
+\begin{itemize}
+    \item  select を使用することで、非同期処理が可能になり、標準入力とソケットを並行して監視できる。
+    \item  safe_write を導入することで、データ送信の安全性を向上させた。
+    \item IPv4 および IPv6 の両方に対応しており、汎用性の高いクライアントプログラムになっている。
+    \item エラー処理を適切に行うことで、安定した通信が実現できる。
+\end{itemize}
 
+\section{感想}
 
-
+本プログラムの開発を通じて、ソケットプログラミングの基本と、selectを利用した非同期処理の重要性を学ぶことができた。
+また、実際のネットワークプログラムではエラーハンドリングが非常に重要であることを再認識した。
 
 
 \end{document}

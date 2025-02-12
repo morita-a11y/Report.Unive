@@ -1,0 +1,905 @@
+This is LuaHBTeX, Version 1.14.0 (TeX Live 2022/dev/Debian)  (format=lualatex 2024.12.25)  5 FEB 2025 17:29
+ restricted system commands enabled.
+**client.c
+(./client.c
+LaTeX2e <2021-11-15> patch level 1
+Lua module: luaotfload 2021-05-21 3.18 Lua based OpenType font support
+Lua module: lualibs 2021-05-20 2.74 ConTeXt Lua standard libraries.
+Lua module: lualibs-extended 2021-05-20 2.74 ConTeXt Lua libraries -- extended c
+ollection.
+luaotfload | conf : Root cache directory is "/home/ren/.texlive2021/texmf-var/lu
+atex-cache/generic/names".
+luaotfload | init : Loading fontloader "fontloader-2021-05-20.lua" from kpse-res
+olved path "/usr/share/texlive/texmf-dist/tex/luatex/luaotfload/fontloader-2021-
+05-20.lua".
+Lua-only attribute luaotfload@noligature = 1
+Lua-only attribute luaotfload@syllabe = 2
+luaotfload | init : Context OpenType loader version 3.116
+Inserting `luaotfload.node_processor' at position 1 in `pre_linebreak_filter'.
+Inserting `luaotfload.node_processor' at position 1 in `hpack_filter'.
+Inserting `luaotfload.glyph_stream' at position 1 in `glyph_stream_provider'.
+Inserting `luaotfload.define_font' at position 1 in `define_font'.
+Lua-only attribute luaotfload_color_attribute = 3
+luaotfload | conf : Root cache directory is "/home/ren/.texlive2021/texmf-var/lu
+atex-cache/generic/names".
+Inserting `luaotfload.harf.strip_prefix' at position 1 in `find_opentype_file'.
+Inserting `luaotfload.harf.strip_prefix' at position 1 in `find_truetype_file'.
+Inserting `luaotfload.harf.finalize_vlist' at position 1 in `post_linebreak_filt
+er'.
+Inserting `luaotfload.harf.finalize_hlist' at position 2 in `hpack_filter'.
+Inserting `luaotfload.cleanup_files' at position 1 in `wrapup_run'.
+Inserting `luaotfload.harf.finalize_unicode' at position 1 in `finish_pdffile'.
+Inserting `luaotfload.glyphinfo' at position 1 in `glyph_info'.
+Lua-only attribute luaotfload.letterspace_done = 4
+Inserting `luaotfload.aux.set_sscale_dimens' at position 1 in `luaotfload.patch_
+font'.
+Inserting `luaotfload.aux.set_font_index' at position 2 in `luaotfload.patch_fon
+t'.
+Inserting `luaotfload.aux.patch_cambria_domh' at position 3 in `luaotfload.patch
+_font'.
+Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_fon
+t_unsafe'.
+Inserting `luaotfload.aux.set_capheight' at position 4 in `luaotfload.patch_font
+'.
+Inserting `luaotfload.aux.set_xheight' at position 5 in `luaotfload.patch_font'.
+Inserting `luaotfload.rewrite_fontname' at position 6 in `luaotfload.patch_font'
+. L3 programming layer <2022-01-21>
+Inserting `tracingstacklevels' at position 1 in `input_level_string'.
+! You can't use `macro parameter character #' in vertical mode.
+l.1 #
+   include <stdio.h>
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn''t ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 #i
+    nclude <stdio.h>
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! You can't use `macro parameter character #' in horizontal mode.
+l.2 #
+   include <stdlib.h>
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn''t ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in horizontal mode.
+l.3 #
+   include <unistd.h>
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn''t ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in horizontal mode.
+l.4 #
+   include <string.h>
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn''t ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in horizontal mode.
+l.5 #
+   include <sys/types.h>
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn''t ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in horizontal mode.
+l.6 #
+   include <sys/socket.h>
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn''t ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in horizontal mode.
+l.7 #
+   include <netinet/in.h>
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn''t ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in horizontal mode.
+l.8 #
+   include <netdb.h>
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn''t ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in horizontal mode.
+l.9 #
+   include <arpa/inet.h>
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn''t ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! You can't use `macro parameter character #' in horizontal mode.
+l.10 #
+    include <errno.h>
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn''t ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 1--11
+[]include
+ []
+
+! You can't use `macro parameter character #' in vertical mode.
+l.12 #
+    define BUFFER_SIZE BUFSIZ
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn''t ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.12 #d
+     efine BUFFER_SIZE BUFSIZ
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.12 #define BUFFER_
+                  SIZE BUFSIZ
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 12.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 12.
+! Missing $ inserted.
+<inserted text> 
+$
+l.13 
+   
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 12--13
+[]define
+ []
+
+
+Overfull \hbox (69.72842pt too wide) in paragraph at lines 12--13
+BUFFER$[][]\OML/cmm/m/it/10 IZEBUFSIZ$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.14 s
+    size_t safe_write(int fd, const void *buf, size_t count) {
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.14 ssize_
+         t safe_write(int fd, const void *buf, size_t count) {
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.27 
+   
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+Missing character: There is no シ (U+30B7) in font cmmi10!
+Missing character: There is no シ (U+30B7) in font cmmi10!
+Missing character: There is no グ (U+30B0) in font cmmi10!
+Missing character: There is no グ (U+30B0) in font cmmi10!
+Missing character: There is no ナ (U+30CA) in font cmmi10!
+Missing character: There is no ナ (U+30CA) in font cmmi10!
+Missing character: There is no ル (U+30EB) in font cmmi10!
+Missing character: There is no 割 (U+5272) in font cmr10!
+Missing character: There is no り (U+308A) in font cmmi10!
+Missing character: There is no 込 (U+8FBC) in font cmr10!
+Missing character: There is no み (U+307F) in font cmmi10!
+Missing character: There is no み (U+307F) in font cmmi10!
+Missing character: There is no な (U+306A) in font cmmi10!
+Missing character: There is no な (U+306A) in font cmmi10!
+Missing character: There is no ら (U+3089) in font cmmi10!
+Missing character: There is no 再 (U+518D) in font cmr10!
+Missing character: There is no 再 (U+518D) in font cmr10!
+Missing character: There is no 試 (U+8A66) in font cmr10!
+Missing character: There is no 試 (U+8A66) in font cmr10!
+Missing character: There is no 行 (U+884C) in font cmr10!
+
+Overfull \hbox (146.84607pt too wide) in paragraph at lines 14--27
+[]ssize$[][]\OML/cmm/m/it/10 safe[]rite\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 intfd; constvoid \OMS/cmsy/m/n/10 
+ []
+
+
+Overfull \hbox (1200.61336pt too wide) in paragraph at lines 14--27
+\OML/cmm/m/it/10 buf; size[]count\OT1/cmr/m/n/10 )[]$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 i
+    nt main (int argc, char *argv[]) {
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.30     char buffer[BUFFER_
+                          SIZE];
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Undefined control sequence.
+l.31     char mesg[BUFFER_SIZE] = "Hello, world!\n
+                                                ";
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.36 
+   
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 28--36
+[]int
+ []
+
+
+Overfull \hbox (166.89221pt too wide) in paragraph at lines 28--36
+buffer[BUFFER$[][]\OML/cmm/m/it/10 IZE\OT1/cmr/m/n/10 ]; \OML/cmm/m/it/10 charme
+sg\OT1/cmr/m/n/10 [\OML/cmm/m/it/10 BUFFER[]IZE\OT1/cmr/m/n/10 ] =
+ []
+
+
+Overfull \hbox (97.27095pt too wide) in paragraph at lines 28--36
+\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 Hello; world\OT1/cmr/m/n/10 !"; \OML/cmm/m/it
+/10 char \OMS/cmsy/m/n/10 
+ []
+
+
+Overfull \hbox (53.55911pt too wide) in paragraph at lines 28--36
+\OML/cmm/m/it/10 portname \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (64.60893pt too wide) in paragraph at lines 28--36
+\OT1/cmr/m/n/10 "10000"; \OML/cmm/m/it/10 char \OMS/cmsy/m/n/10 
+ []
+
+
+Overfull \hbox (64.06493pt too wide) in paragraph at lines 28--36
+\OML/cmm/m/it/10 servername \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (227.1483pt too wide) in paragraph at lines 28--36
+\OT1/cmr/m/n/10 "\OML/cmm/m/it/10 localhost\OT1/cmr/m/n/10 "; \OML/cmm/m/it/10 
+interror\OT1/cmr/m/n/10 ; \OML/cmm/m/it/10 structaddrinfohints; \OMS/cmsy/m/n/1
+0 \OML/cmm/m/it/10 res; \OMS/cmsy/m/n/10 \OML/cmm/m/it/10 r\OT1/cmr/m/n/10 ;$
+ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37     i
+        f (argc >= 2) {
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.42                 snprintf(mesg, BUFFER_
+                                         SIZE, "%s\n", argv[3]); /* 第3引数..
+.
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+l.43             }
+                
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+l.44         }
+            
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+l.45     }
+        
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.46 
+   
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 37--46
+[]if
+ []
+
+
+Overfull \hbox (35.91803pt too wide) in paragraph at lines 37--46
+BUFFER$[][]\OML/cmm/m/it/10 IZE; \OT1/cmr/m/n/10 "$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.47     m
+        emset(&hints, 0, sizeof(hints));
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Misplaced alignment tab character &.
+l.47     memset(&
+               hints, 0, sizeof(hints));
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.48     hints.ai_
+                family = PF_UNSPEC;       /* IPv4 or IPv6 */
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Misplaced alignment tab character &.
+l.50 ...(error = getaddrinfo(servername, portname, &
+                                                  hints, &res))) {
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.50 ... getaddrinfo(servername, portname, &hints, &
+                                                  res))) {
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.54 
+   
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 47--54
+[]memset(hints,
+ []
+
+
+Overfull \hbox (41.69292pt too wide) in paragraph at lines 47--54
+hints.ai$[][]\OML/cmm/m/it/10 amily \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (74.84535pt too wide) in paragraph at lines 47--54
+\OML/cmm/m/it/10 PF[]NSPEC\OT1/cmr/m/n/10 ; \OML/cmm/m/it/10 = \OMS/cmsy/m/n/10
+ 
+ []
+
+
+Overfull \hbox (61.02782pt too wide) in paragraph at lines 47--54
+\OML/cmm/m/it/10 IPv\OT1/cmr/m/n/10 4\OML/cmm/m/it/10 orIPv\OT1/cmr/m/n/10 6 \O
+MS/cmsy/m/n/10 
+ []
+
+
+Overfull \hbox (88.10219pt too wide) in paragraph at lines 47--54
+\OML/cmm/m/it/10 =hints:ai[]ocktype \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (92.35971pt too wide) in paragraph at lines 47--54
+\OML/cmm/m/it/10 SOCK[]TREAM\OT1/cmr/m/n/10 ; \OML/cmm/m/it/10 = \OMS/cmsy/m/n/
+10 
+ []
+
+
+Overfull \hbox (27.90419pt too wide) in paragraph at lines 47--54
+\OML/cmm/m/it/10 TCP \OMS/cmsy/m/n/10 
+ []
+
+
+Overfull \hbox (56.62231pt too wide) in paragraph at lines 47--54
+\OML/cmm/m/it/10 =if\OT1/cmr/m/n/10 ((\OML/cmm/m/it/10 error \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (387.99483pt too wide) in paragraph at lines 47--54
+\OML/cmm/m/it/10 getaddrinfo\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 servername; portna
+me; hints; res\OT1/cmr/m/n/10 )))[]$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55     f
+        or (r = res; r; r = r->ai_next) {
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.55     for (r = res; r; r = r->ai_
+                                  next) {
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.68 
+   
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 55--68
+[]for
+ []
+
+
+Overfull \hbox (946.97728pt too wide) in paragraph at lines 55--68
+>ai$[][]\OML/cmm/m/it/10 ext\OT1/cmr/m/n/10 )[]\OML/cmm/m/it/10 freeaddrinfo\OT
+1/cmr/m/n/10 (\OML/cmm/m/it/10 res\OT1/cmr/m/n/10 ); \OML/cmm/m/it/10 if\OT1/cm
+r/m/n/10 (\OML/cmm/m/it/10 sockfd <
+ []
+
+
+Overfull \hbox (164.82234pt too wide) in paragraph at lines 55--68
+\OT1/cmr/m/n/10 0)[]$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.69     f
+        d_set read_fds;
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.69     fd_
+          set read_fds;
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.70 
+   
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (70.33232pt too wide) in paragraph at lines 69--70
+[]fd$[][]\OML/cmm/m/it/10 etread[]ds\OT1/cmr/m/n/10 ;$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.71     f
+        or (;;) {
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.72         FD_
+              ZERO(&read_fds);
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Misplaced alignment tab character &.
+l.72         FD_ZERO(&
+                    read_fds);
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.73         FD_SET(STDIN_FILENO, &
+                                 read_fds);
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.74         FD_SET(sockfd, &
+                           read_fds);
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.75 
+   
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 71--75
+[]for
+ []
+
+
+Overfull \hbox (362.96187pt too wide) in paragraph at lines 71--75
+FD$[][]\OML/cmm/m/it/10 ERO\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 read[]ds\OT1/cmr/m
+/n/10 ); \OML/cmm/m/it/10 FD[]ET\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 STDIN[]ILENO; read[]ds\OT1/cmr/m/n/10 ); \OML/cmm/m/it/10 FD[]ET\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 sockfd; read[]ds\OT1/cmr/m/n/10 );$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.76         i
+            nt max_fd = (sockfd > STDIN_FILENO) ? sockfd : STDIN_FILENO;
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.76         int max_
+                   fd = (sockfd > STDIN_FILENO) ? sockfd : STDIN_FILENO;
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Misplaced alignment tab character &.
+l.77         int activity = select(max_fd + 1, &
+                                              read_fds, NULL, NULL, NULL);
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.83 
+   
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+Missing character: There is no シ (U+30B7) in font cmmi10!
+Missing character: There is no シ (U+30B7) in font cmmi10!
+Missing character: There is no グ (U+30B0) in font cmmi10!
+Missing character: There is no グ (U+30B0) in font cmmi10!
+Missing character: There is no ナ (U+30CA) in font cmmi10!
+Missing character: There is no ナ (U+30CA) in font cmmi10!
+Missing character: There is no ル (U+30EB) in font cmmi10!
+Missing character: There is no 割 (U+5272) in font cmr10!
+Missing character: There is no り (U+308A) in font cmmi10!
+Missing character: There is no 込 (U+8FBC) in font cmr10!
+Missing character: There is no み (U+307F) in font cmmi10!
+Missing character: There is no み (U+307F) in font cmmi10!
+Missing character: There is no な (U+306A) in font cmmi10!
+Missing character: There is no な (U+306A) in font cmmi10!
+Missing character: There is no ら (U+3089) in font cmmi10!
+Missing character: There is no 再 (U+518D) in font cmr10!
+Missing character: There is no 再 (U+518D) in font cmr10!
+Missing character: There is no 試 (U+8A66) in font cmr10!
+Missing character: There is no 試 (U+8A66) in font cmr10!
+Missing character: There is no 行 (U+884C) in font cmr10!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 76--83
+[]int
+ []
+
+
+Overfull \hbox (20.94446pt too wide) in paragraph at lines 76--83
+max$[][]\OML/cmm/m/it/10 d \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (45.00467pt too wide) in paragraph at lines 76--83
+\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 sockfd >
+ []
+
+
+Overfull \hbox (124.06294pt too wide) in paragraph at lines 76--83
+\OML/cmm/m/it/10 STDIN[]ILENO\OT1/cmr/m/n/10 )?\OML/cmm/m/it/10 sockfd \OT1/cmr
+/m/n/10 :
+ []
+
+
+Overfull \hbox (141.58812pt too wide) in paragraph at lines 76--83
+\OML/cmm/m/it/10 STDIN[]ILENO\OT1/cmr/m/n/10 ; \OML/cmm/m/it/10 intactivity \OT
+1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (66.95622pt too wide) in paragraph at lines 76--83
+\OML/cmm/m/it/10 select\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 max[]d \OT1/cmr/m/n/10
+ +
+ []
+
+
+Overfull \hbox (216.14159pt too wide) in paragraph at lines 76--83
+\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ; read[]ds; NULL; NULL; NULL\OT1/cmr/m/n/10 );
+ \OML/cmm/m/it/10 if\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 activity <
+ []
+
+
+Overfull \hbox (266.07353pt too wide) in paragraph at lines 76--83
+\OT1/cmr/m/n/10 0)[]$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.84         /
+            / 標準入力からの入力をサーバーへ送信
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.85         if (FD_
+                  ISSET(STDIN_FILENO, &read_fds)) {
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Misplaced alignment tab character &.
+l.85         if (FD_ISSET(STDIN_FILENO, &
+                                       read_fds)) {
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Undefined control sequence.
+l.91 ...            printf("Standard input closed.\n
+                                                  ");
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.96 
+   
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 84--96
+[]//
+ []
+
+
+Overfull \hbox (1179.92989pt too wide) in paragraph at lines 84--96
+(FD$[][]\OML/cmm/m/it/10 SSET\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 STDIN[]ILENO; rea
+d[]ds\OT1/cmr/m/n/10 ))[]$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.97         /
+            / サーバーからのデータを標準出力に表示
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.98         if (FD_
+                  ISSET(sockfd, &read_fds)) {
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Misplaced alignment tab character &.
+l.98         if (FD_ISSET(sockfd, &
+                                 read_fds)) {
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Undefined control sequence.
+l.104 ...    printf("Server closed the connection.\n
+                                                  ");
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Extra }, or forgotten $.
+l.109     }
+         
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+$
+l.110 
+    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 97--110
+[]//
+ []
+
+
+Overfull \hbox (1239.32368pt too wide) in paragraph at lines 97--110
+(FD$[][]\OML/cmm/m/it/10 SSET\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 sockfd; read[]ds\OT1/cmr/m/n/10 ))[]$ 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.111     c
+         lose(sockfd);
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+)
+! Emergency stop.
+<*> client.c
+         
+*** (job aborted, no legal \end found)
+
+
+
+Here is how much of LuaTeX's memory you used:
+ 21 strings out of 477805
+ 100000,383344 words of node,token memory allocated 20511 words of node memory still in use:
+   146 hlist, 1 disc, 13 local_par, 1 dir, 22 math, 341 glue, 391 kern, 52 penal
+ty, 1996 glyph, 54 attribute, 39 glue_spec, 54 attribute_list, 1 temp nodes
+   avail lists: 3:245,4:27,5:2,8:273,10:26
+ 20837 multiletter control sequences out of 65536+600000
+ 24 fonts using 1213367 bytes
+ 18i,4n,12p,105b,57s stack positions out of 5000i,500n,10000p,200000b,80000s
+!  ==> Fatal error occurred, no output PDF file produced!
